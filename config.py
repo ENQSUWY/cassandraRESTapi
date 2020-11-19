@@ -3,11 +3,11 @@
 
 
 config = {
-         'username': '<FILLME>',
+    'username': 'cassandrarestapi',
 
-         'password': '<FILLME>',
+    'password': 'hcONvbgk6ec7E2Z2hZ0njuuS7lqWDzpBAov6G3d3HRV5Nx0KI1PNtA7Xzf0N0Z2KKdcm36GGtsGTr88jNiCUSg==',
 
-         'contactPoint': '<FILLME>',
+    'contactPoint': 'cassandrarestapi.cassandra.cosmos.azure.com',
 
-         'port':'10350'
+    'port':'10350'
          }
