@@ -5,6 +5,7 @@ languages:
 products:
 - RestAPI with Python operates on Cassandra from Azure
 description: "Design and implement a player session service using Python and Cassandra"
+urlFragment: azure-cosmos-db-cassandra-python-getting-started
 ---
 
 # player session service using Python + Cassandra API on Azure
@@ -18,16 +19,16 @@ session is considered complete. Service is expected to handle massive amount of 
 
 * Use Python and Cassandra
 * All endpoints are REST APIs
-⋅⋅⋅tested with postman for GET and POST⋅⋅
+   tested with postman for GET and POST  
 
 * API for receiving event batches (1-10 events / batch)
-⋅⋅⋅POST will take 1-many events as input in json format, and return 200OK and string "POST success"⋅⋅
+   POST will take 1-many events as input in json format, and return 200OK and string "POST success"  
 
 * API for fetching last 20 complete sessions for a given player
-⋅⋅⋅GET will take player_id as input in json format, and return 20 complete sessions⋅⋅
+   GET will take player_id as input in json format, and return 20 complete sessions  
 
 * Data older than 1 year should be discarded
-⋅⋅⋅INSERT using TTL of 865400 seconds, so data with 1 years old is automatically cleaned up.⋅⋅
+   INSERT using TTL of 865400 seconds, so data with 1 years old is automatically cleaned up.  
 
 ## Running this sample
 * will keep active Azure Cassandra API account for 10 days, delete after
